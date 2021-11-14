@@ -10,15 +10,24 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Header*/}
-        <Header />
+
         <Router>
           <Routes>
-            <Route path="/chat" element={<h2>Hi I am chat page</h2>} />
+            <Route
+              path="/chats"
+              element={
+                <>
+                  <Header backButton="/" />
+                  <h2>Hi I am chat page</h2>
+                </>
+              }
+            />
 
             <Route
               path="/"
               element={
                 <>
+                  <Header />
                   <TinderCards />
                   <SwipeButtons />
                 </>
