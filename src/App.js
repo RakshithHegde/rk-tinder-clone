@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import TinderCard from "./TinderCard";
+import TinderCard from "./TinderCards";
 
 function App() {
   return (
