@@ -2,15 +2,15 @@ import { Avatar } from "@material-ui/core";
 import "./chat.css";
 import React from "react";
 
-function Chat({ name, message, imageUrl, timeStamp }) {
+function Chat({ name, message, imageUrl, timestamp }) {
   return (
     <div className="chat">
       <Avatar className="chat__image" alt={name} src={imageUrl} />
-      <div>
+      <div className="chat__details">
         <h2>{name}</h2>
         <p>{message}</p>
       </div>
-      <p>{timeStamp}</p>
+      <p className="class__timestamp">{timestamp}</p>
     </div>
   );
 }
