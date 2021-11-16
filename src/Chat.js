@@ -10,7 +10,7 @@ function Chat({ name, message, imageUrl, timestamp }) {
         <h2>{name}</h2>
         <p>{message}</p>
       </div>
-      <p className="class__timestamp">{timestamp}</p>
+      <p className="chat__timestamp">{timestamp}</p>
     </div>
   );
 }
