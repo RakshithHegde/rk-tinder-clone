@@ -7,12 +7,12 @@ import { IconButton } from "@material-ui/core";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 
 function Header({ backButton }) {
-  const hstory = useHistory();
+  const history = useHistory();
 
   return (
     <div className="header">
       {backButton ? (
-        <IconButton onClick={() => hstory.replace(backButton)}>
+        <IconButton onClick={() => history.replace(backButton)}>
           <ArrowBackIosIcon className="header__icon" fontSize="large" />
         </IconButton>
       ) : (
